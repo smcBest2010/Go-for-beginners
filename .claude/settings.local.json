@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git mv *)",
+      "Bash(mv Day01 01-hello-world)",
+      "Bash(go run *)",
+      "Read(//Users/admin/**)",
+      "Bash(mv leaningGo Go-for-beginners)"
+    ]
+  }
+}
