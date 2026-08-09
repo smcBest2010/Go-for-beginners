@@ -1,3 +1,3 @@
-module 01-hello-world
+module banana
 
 go 1.26.5
