@@ -11,4 +11,5 @@ func main() {
 
 	totalLen02, _ := lenAndUpper.LaU("hello")
 	fmt.Printf("%d 생락하려면 언더바를 활용하자,", totalLen02) // 언더바를 사용하면 value값을 무시하게 된다.
+
 }
