@@ -10,7 +10,6 @@ func main() { // main 함수는 프로그램의 시작점임. main 패키지 안
 	something.SayHello()       // something 패키지 안에 있는 SayHello() 함수를 호출함. 이 함수는 something 패키지에서 정의되어 있음 하지만
 }
 
-
 /*
 여담으로 import는 모듈에 있는 기준으로 패키지를 찾는다
 
