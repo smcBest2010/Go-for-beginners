@@ -1,3 +1,19 @@
+package handler
+
+import (
+	"post/module"
+
+	"github.com/gin-gonic/gin"
+)
+
+func PostCreate(c *gin.Context) {
+	var post module.Post
+	if err := c.ShouldBindJSON(&post); err != nil {
+		c.JSON(400, gin.H{"error": err.Error()})
+		return
+	}
+	c.JSON(200, post)
+}
 
 /*
 택배(JSON)가 서버에 도착했습니다.
