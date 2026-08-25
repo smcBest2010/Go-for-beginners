@@ -15,6 +15,15 @@ func PostCreate(c *gin.Context) {
 	c.JSON(200, post)
 }
 
+func SignUpHandler(c *gin.Context) {
+	var sign module.SignUpRequest
+	if err := c.ShouldBindJSON(&sign); err != nil {
+		c.JSON(400, gin.H{"error": err.Error()})
+		return
+	}
+	c.JSON(200, sign)
+}
+
 /*
 택배(JSON)가 서버에 도착했습니다.
 고랭은 택배 상자 안에 든 데이터가 필요합니다.

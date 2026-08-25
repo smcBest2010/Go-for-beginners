@@ -1,12 +1,12 @@
-package module
-
-type Post struct {
-	Title   string `json:"title"`
-	Content string `json:"content"`
-}
+package modules
 
 type SignUpRequest struct {
 	Username string `json:"username"`
 	Password string `json:"password"`
 	Email    string `json:"email"`
+}
+
+type LoginRequest struct {
+	Username string `json:"username"`
+	Password string `json:"password"`
 }

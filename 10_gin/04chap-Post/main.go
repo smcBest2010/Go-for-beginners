@@ -11,6 +11,6 @@ func main() {
 
 	api := r.Group("/api")
 	api.POST("/post", handler.PostCreate)
-
+	api.POST("/signUp", handler.SignUpHandler)
 	r.Run()
 }
